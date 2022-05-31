@@ -1489,6 +1489,26 @@
         "back": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/150.png"
       },
       "dexNo": 150
+    },
+    {
+      "name": "Hippowdon",
+      "hp": "300",
+      "sprites": {
+        "front": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/450.png",
+        "back": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/450.png"
+      },
+      "dexNo": "450",
+      "id": 151
+    },
+    {
+      "name": "bibarel",
+      "hp": "200",
+      "sprites": {
+        "front": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/400.png",
+        "back": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/400.png"
+      },
+      "dexNo": "400",
+      "id": 152
     }
   ]
 }

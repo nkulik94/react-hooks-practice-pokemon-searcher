@@ -17,8 +17,9 @@ function PokemonPage() {
   function handleNewPokemon(newPokemon) {
     updateList([...pokeList, newPokemon])
   }
-
-  const renderedList = pokeList.filter(pokemon => pokemon.name.toUpperCase().match(searchValue.toUpperCase()))
+  
+  const sortedList = pokeList.sort((a, b) => a.dexNo - b.dexNo)
+  const renderedList = sortedList.filter(pokemon => pokemon.name.toUpperCase().match(searchValue.toUpperCase()))
 
   return (
     <Container>
