@@ -14,13 +14,17 @@ function PokemonPage() {
       .then(data => updateList(data))
   }, [])
 
+  function handleNewPokemon(newPokemon) {
+    updateList([...pokeList, newPokemon])
+  }
+
   const renderedList = pokeList.filter(pokemon => pokemon.name.toUpperCase().match(searchValue.toUpperCase()))
 
   return (
     <Container>
       <h1>Pokemon Searcher</h1>
       <br />
-      <PokemonForm />
+      <PokemonForm onSubmitForm={handleNewPokemon} />
       <br />
       <Search searchValue={searchValue} update={search} />
       <br />
